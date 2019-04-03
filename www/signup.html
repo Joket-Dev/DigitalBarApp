@@ -1,0 +1,176 @@
+<div data-page="signup" class="page no-navbar">
+	<!-- Begin: Page Content -->
+  <div class="page-content">
+		<div class="content-block">
+			<img class="logo" src="assets/custom/img/vendor.jpg" />
+		</div>
+
+		<form name="signup-email" action="#" method="POST" enctype="multipart/form-data">
+			<div class="list-block no-hairlines">
+				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i class="material-icons">person_outline</i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="text" id="full_name" name="full_name" placeholder="Name" required />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-media " style="border-bottom: 1px solid #eee;">
+								<i style="font-size: 28px;" class="fa fa-caret-square-o-down" aria-hidden="true"></i>
+							</div>
+							<div class="item-inner5 " style="margin-left: 0px;">
+								<div class="item-input5">
+									<select class="bussiness_cat" id="bussiness_cat" name="bussiness_cat[]"></select>
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i style="font-size: 28px;" class="fa fa-pencil-square-o" aria-hidden="true"></i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="text" id="bussiness_name" name="bussiness_name" placeholder="Bussiness Display Name" required />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i class="material-icons">phone_android</i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="number" id="user_moblie_number" name="user_moblie_number" placeholder="Mobile number" required />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i class="material-icons">lock_outline</i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="password" id="user_password" name="user_password" placeholder="Password" data-toggle="show-hide-password" required />
+								</div>
+								<div class="item-after show-hide-password">
+									<a href="#" class="color-gray" title="Show" data-action="show-hide-password">
+										<i class="material-icons">visibility</i>
+									</a>
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i class="material-icons">opacity</i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="text" id="full_address" name="full_address" placeholder="Address" required />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i style="font-size: 28px;" class="fa fa-check-square-o" aria-hidden="true"></i>
+							</div>
+							<div class="item-inner radio" style="margin-left: 0px;padding-top: 14px;">
+								<label class="radio_input">
+								<input type="radio" name="gen_speci" id="optionsRadios1" class="gen_speci" value="GST" checked >GST					
+							  </label>
+							  <label class="radio_input">
+								<input type="radio" name="gen_speci" id="optionsRadios2" class="gen_speci" value="Other">Other Details
+							  </label>
+							</div>
+						</div>
+					</li>
+					<li class="for_gst_data">
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i class="material-icons">polymer</i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="text" id="gst_number" name="gst_number" placeholder="GST number" />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li class="for_other_details display_none">
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i style="font-size: 28px;" class="fa fa-id-card-o" aria-hidden="true"></i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="text" id="pan_number" name="pan_number" placeholder="PAN number" value="empty" />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li class="for_other_details display_none">
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i class="material-icons">cake</i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="text" id="date_ob" name="date_ob" placeholder="Date Of Birth" value="empty" />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li class="for_other_details display_none">
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i class="material-icons">person_outline</i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="text" id="sur_name" name="sur_name" placeholder="Surname" value="empty" />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div style="padding-top: 25px;">By clicking Sign Up, you agree to our <a href="terms.html">terms and conditions</a> </div>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="content-block">
+				<button type="submit" style="border-bottom: 4px solid #2c759d;font-size: 18px;" class="button button-big button-block button-fill">Sign Up</button>
+				
+			</div>
+		</form>
+			
+			<p class="text-center" style="margin-top:50px;opacity: 0.8;">ALREADY HAVE AN ACCOUNT <a href="vender_login.html">SIGN IN</a></p>
+	</div>
+	<!-- End: Page Content -->
+</div>

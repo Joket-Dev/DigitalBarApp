@@ -1,0 +1,114 @@
+{
+  "cordova-plugin-whitelist": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-whitelist@1"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-statusbar": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-statusbar@2.4.2"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-x-socialsharing": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-x-socialsharing"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "es6-promise-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "es6-promise-plugin@^4.1.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-android-support-gradle-release": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-android-support-gradle-release"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "onesignal-cordova-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "onesignal-cordova-plugin"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.unarin.cordova.beacon": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/petermetz/cordova-plugin-ibeacon.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-device": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-device@*"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-badge": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-badge@^0.8.8"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-ezar-snapshot": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ezar-snapshot@^1.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-ezar-facedetector": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ezar-facedetector@^1.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-ezar-videooverlay": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-ezar-videooverlay@^1.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-face-recognition": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-face-recognition"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "com.razorpay.cordova": {
+    "source": {
+      "type": "registry",
+      "id": "com.razorpay.cordova"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}

@@ -1,0 +1,334 @@
+<div data-page="checkdeliveryinfo" class="page">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="link icon-only back">
+					<i class="fa fa-angle-left" aria-hidden="true" style="font-size: -webkit-xxx-large;"></i>
+				</a>
+			</div>
+			<div class="center">Check Delivery Info</div>
+		</div>
+	</div>
+	<!-- Begin: Page Content -->
+	
+  <div class="page-content">
+
+	<form name="check_delivery_info" class="display_none check_delivery_info" action="#" method="POST" enctype="multipart/form-data">
+		
+            <div class="list-block no-hairlines">
+				
+				<ul>
+				
+			
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Name</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_Name" class="delivery_Name" name="delivery_Name" placeholder="Name" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+			
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Phone Number</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_phone_number" class="delivery_phone_number" name="delivery_phone_number" placeholder="Phone Number" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+			
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Door No / Flat No</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_door" class="delivery_door" name="delivery_door" placeholder="Door No / Flat No" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Appartment Name(if any)</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_appart" class="delivery_appart" name="delivery_appart" placeholder="Apartment Name" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Street 1</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_street1" class="delivery_street1" name="delivery_street1" placeholder="Street 1" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Street 2</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_street2" class="delivery_street2" name="delivery_street2" placeholder="Street 2" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">landmark / Area</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_area" class="delivery_area" name="delivery_area" placeholder="landmark" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+			
+			
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">City</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_city" class="delivery_city" name="delivery_city" placeholder="City" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+			
+			
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">State</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_state" class="delivery_state" name="delivery_state" placeholder="State" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+			
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Pin Code</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_pin_code" class="delivery_pin_code" name="delivery_pin_code" placeholder="Pin Code" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				</ul>
+			</div>
+			<div class="content-block">
+				<button type="submit" class="button button-big button-block  button-fill check_delivery_info_btn" style="margin-bottom: 50px;font-size: 18px;">Save</button>
+			</div>
+		</form>
+         
+		
+	<form name="check_delivery_info_onetime" class=" display_none check_delivery_info_onetime" action="#" method="POST" enctype="multipart/form-data">
+		
+            <div class="list-block no-hairlines">
+				
+				<ul>
+				
+				<li>
+					<div class="item-content">
+						<div class="item-inner">
+						<div class="item-title label">Delivery date</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_start_date" class="delivery_start_date" name="delivery_start_date" placeholder="Delivery date" >
+								
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+			
+				
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label" style="font-size: 14px;"> Delivery   Timing</div>
+							<div class="item-input">
+								<select id="delivery_start_timing" name="delivery_start_timing" class="delivery_start_timing">
+								<option value="" >Select Delivery  Timing</option>
+									<option st="5" et="7"  >5:00-7:00 </option>
+									<option st="7" et="9"  >7:00-9:00 </option>
+									<option st="9" et="11"  >9:00-11:00 </option>
+									<option st="11" et="13"  >11:00-13:00 </option>
+									<option st="13" et="15"  >13:00-15:00 </option>
+									<option st="15" et="17"  >15:00-17:00 </option>
+									<option st="17" et="19"  >17:00-19:00 </option>
+									<option st="19" et="21"  >19:00-21:00 </option>
+									
+									
+								</select>
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Name</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_Name1" class="delivery_Name" name="delivery_Name1" placeholder="Name" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+			
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Phone Number</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_phone_number1" class="delivery_phone_number" name="delivery_phone_number1" placeholder="Phone Number" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Door No / Flat No</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_door_1" class="delivery_door" name="delivery_door_1" placeholder="Door No / Flat No" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Appartment Name(if any)</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_appart_1" class="delivery_appart" name="delivery_appart_1" placeholder="Apartment Name" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Street 1</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_street1_1" class="delivery_street1" name="delivery_street1_1" placeholder="Street 1" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Street 2</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_street2_1" class="delivery_street2" name="delivery_street2_1" placeholder="Street 2" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">landmark / Area</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_area_1" class="delivery_area" name="delivery_area_1" placeholder="landmark" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				<!--<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Address (Area & Street)</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_address1" class="delivery_address" name="delivery_address1" placeholder="Address (Area & Street)" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>-->
+			
+			
+					<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">City</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_city1" class="delivery_city" name="delivery_city1" placeholder="City" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+			
+			
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">State</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_state1" class="delivery_state" name="delivery_state1" placeholder="State" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+			
+				<li>
+					<div class="item-content " >
+						<div class="item-inner">
+						<div class="item-title label">Pin Code</div>
+							<div class="item-input">
+								<input  type="text" id="delivery_pin_code1" class="delivery_pin_code" name="delivery_pin_code1" placeholder="Pin Code" >
+							</div>
+							<div class="item-text input-error"></div>
+						</div>
+					</div>
+				</li>
+				</ul>
+			</div>
+			<div class="content-block">
+				<button type="submit" class="button button-big button-block  button-fill check_delivery_info_onetime_btn" style="margin-bottom: 50px;font-size: 18px;">Submit</button>
+			</div>
+		</form>
+         
+		
+			
+			
+			
+			
+
+	</div>
+	<!-- End: Page Content -->
+	
+</div>

@@ -1,0 +1,63 @@
+<style>
+.material-icons {
+    opacity: 0.5;
+}
+</style>
+<div data-page="vender_login" class="page no-navbar">
+	<!-- Begin: Page Content -->
+  <div class="page-content" style="padding-bottom: 10px;">
+		<div class="content-block" >
+			<img class="logo" src="assets/custom/img/vendor.jpg" style="border-radius: 50%; height: 150px; width: 150px;" />
+				<h2 style="text-align: center;">Vendor Login</h2>
+		</div>
+
+		<form name="login" action="#" method="POST" enctype="multipart/form-data">
+			<div class="list-block no-hairlines" style="margin: 20px 0;">
+				<ul>
+					<li>
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i class="material-icons">phone_android</i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="number" id="user_email2" name="user_email2" placeholder="Mobile number" required />
+									<input style="display:none;" type="text"  id="user_type2" name="user_type2"  value="vendor" />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-content">
+							<div class="item-media" style="border-bottom: 1px solid #eee;">
+								<i class="material-icons">lock_outline</i>
+							</div>
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-input">
+									<input type="password" id="user_password2" name="user_password2" placeholder="Password" data-toggle="show-hide-password" required />
+								</div>
+								<div class="item-after show-hide-password">
+									<a href="#" class="color-gray" title="Show" data-action="show-hide-password">
+										<i class="material-icons">visibility</i>
+									</a>
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				
+			</div>
+			<div class="content-block">
+				<button type="submit" style="border-bottom: 4px solid #2c759d;font-size: 18px;" class="button button-big button-block button-fill">Sign In</button>
+				
+					<a style="margin: 10px 0 20px;" href="forgot-password.html">Forgot Password</a>
+			</div>
+		</form>
+			
+			<p class="text-center">Don't have an account ? <a href="signup.html">Sign Up</a></p>
+			<p class="text-center" style="padding-left: 10px;"> <a class="button button-big" style="width: 95%;font-size: 18px;background: #4CAF50;color: #fff;" href="login.html">Customer Login</a></p>
+	</div>
+	<!-- End: Page Content -->
+</div>

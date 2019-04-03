@@ -1,0 +1,50 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-android-support-gradle-release": {
+      "ANDROID_SUPPORT_VERSION": "27.+",
+      "PACKAGE_NAME": "com.phonegap.Localmandi"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.phonegap.Localmandi"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.phonegap.Localmandi"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "com.phonegap.Localmandi"
+    },
+    "onesignal-cordova-plugin": {
+      "PACKAGE_NAME": "com.phonegap.Localmandi"
+    },
+    "com.unarin.cordova.beacon": {
+      "PACKAGE_NAME": "com.phonegap.Localmandi"
+    },
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.phonegap.Localmandi"
+    },
+    "cordova-plugin-ezar-facedetector": {
+      "PACKAGE_NAME": "com.digitalbar"
+    },
+    "cordova-plugin-ezar-videooverlay": {
+      "PACKAGE_NAME": "com.digitalbar"
+    },
+    "com.razorpay.cordova": {
+      "PACKAGE_NAME": "com.digitalbar"
+    }
+  },
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.phonegap.Localmandi"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.phonegap.Localmandi"
+    }
+  }
+}

@@ -1,0 +1,117 @@
+
+<div data-page="user-profile" class="page">
+	<!-- Begin: Navbar -->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" data-panel="left" class="link open-panel">
+					<i class="hamburger hamburger--elastic">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</i>
+				</a>
+			</div>
+			<div class="center">User Profile</div>
+			<div class="right">
+				<a href="#" class="link open-popup" data-popup=".popup-cities">
+					<i class="fa fa-camera" aria-hidden="true" style="font-size: larger;"></i>
+				</a>
+			
+				<a href="Edit_profile.html" class="link">
+					<i class="fa fa-pencil" aria-hidden="true" style="font-size: larger;"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- End: Navbar -->
+
+	<!-- Begin: Page Content -->
+  <div class="page-content">
+
+		<div class="profile-header">
+			<a href="#" class="open-popup" data-popup=".popup-cities"><img class="user-avatar img-circle user_photo" src="assets/custom/img/user-profile.png"  /></a>
+			<div class="user-name Name_user">------</div>
+		</div>
+
+				
+				<div class="card">
+					<div class="card-content">
+						<div class="card-content-inner">
+							<div class="list-block no-hairlines no-hairlines-between">
+								<ul>
+									<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title">
+													Full Name
+													<div class="item-text">
+													<span class="Name_user">--</span>
+												</div>
+												</div>
+												
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="item-content">
+											<div class="item-inner">
+												<div class="item-title">
+													Email Address
+												<div class="item-text">
+													<span class="contact_no">--</span>
+												</div>
+												</div>
+												
+											</div>
+										</div>
+									</li>
+									
+								
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+	</div>
+	<!--<a href="church-profile.html" class="floating-button" style="position: fixed;margin-bottom:50px;" >
+		<img src="assets/custom/img/icons/Left menu/Church.png" width="34" alt="Settings" />
+	  </a>-->
+	<div class="popup tablet-fullscreen popup-cities" style="height: auto;">
+			<div class="toolbar">
+			  <div class="toolbar-inner">
+				<div class="left">
+					<a href="#" class="link disabled"></a>
+				</div>
+				<div class="center">Upload Profile Picture</div>
+				<div class="right">
+					<a href="#" class="link close-popup">
+						<i class="material-icons">clear</i>
+					</a>
+				</div>
+			  </div>
+			</div>
+
+		<div class="container" style="padding: 0 15px 0 28px;">
+				<div class="modal-body">
+				<input type="hidden" value="user_pro" name="image_profile" class="image_profile">
+				<input type="hidden" value="" name="sub_folder_name" class="sub_folder_name">
+				
+                <div class="row demo-columns ">
+						<!-- D&D Zone-->
+						<div id="upload_image2" class="uploader cropme">
+							<div>Drag &amp; Drop Images Here</div>
+							<div class="or">-or-</div>
+							<div class="browser">
+								<label>
+									<span>Click to open the photos</span>
+									<input type="file" name="files[]" multiple="multiple" title='Click to add Files'>
+								</label>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>

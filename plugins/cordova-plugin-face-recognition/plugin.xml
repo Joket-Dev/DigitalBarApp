@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="cordova-plugin-face-recognition"
+	version="0.0.1">
+      
+    <name>FaceRecognition</name>
+	<description>Cordova plugin telephony to recognize face move.</description>
+	<author>huyuqiong</author>
+	<license>MIT</license>
+	<keywords>face,recognition,plugins</keywords>
+
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+
+    <js-module src="www/FaceRecognition.js" name="FaceRecognition">
+        <clobbers target="window.FaceRecognition" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FaceRecognition">
+                <param name="android-package" value="com.dude.plugins.recognition.FaceRecognition"/>
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/*">
+		    <uses-permission android:name="android.permission.CAMERA"/>
+            <uses-feature android:name="android.hardware.camera" />
+            <uses-feature android:name="android.hardware.camera.autofocus" />
+          </config-file>
+        <framework src="src/android/FaceRecognition.gradle" custom="true" type="gradleReference"/>
+		<source-file src="src/android/FaceRecognition.java" target-dir="src/com/dude/plugins/recognition"/>
+        <resource-file src="src/android/FaceRecognition.aar" target="libs/FaceRecognition.aar"/>
+    </platform>
+
+</plugin>

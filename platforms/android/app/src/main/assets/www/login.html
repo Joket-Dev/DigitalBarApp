@@ -1,0 +1,57 @@
+<style>
+.material-icons {
+    opacity: 0.5;
+}
+</style>
+<div data-page="login" class="page no-navbar">
+	<!-- Begin: Page Content -->
+	<div class="page-content" style="padding-bottom: 10px;">
+		<div class="content-block" >
+			<img class="logo" src="assets/custom/img/digibarlogo.png"  style="height: 150px; width: 150px;" />
+		</div>
+
+		<form name="login"  method="POST" enctype="multipart/form-data">
+			<div class="list-block no-hairlines">
+			
+						<div class="item-content">
+							
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-title">
+									<strong>Email Address</strong>
+								</div>
+								<div class="item-input">
+									<input   type="email" id="user_email1" name="user_email1" placeholder="Email address" required />
+									<input style="display:none;" type="text"  id="user_type" name="user_type"  value="customer" />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+						<div class="item-content">
+							<div class="item-inner" style="margin-left: 0px;">
+								<div class="item-title">
+									<strong>Password</strong>
+								</div>
+								<div class="item-input">
+									<input   type="password" id="user_password" name="user_password" placeholder="Password" data-toggle="show-hide-password" required />
+								</div>
+								<div class="item-after show-hide-password">
+									<a href="#" class="color-gray" title="Show" data-action="show-hide-password">
+										<i style="margin-top: 25px;" class="material-icons">visibility</i>
+									</a>
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+				<a style="margin: 10px 0 20px;" href="forgot-password.html">Forgot Password?</a>
+			</div>
+			<div class="content-block max_width200" style="margin: 0 auto;">
+				<button type="submit" style="font-size: 18px;" class=" text-center  button button-big button-block button-fill"><strong>LOG IN</strong></button>
+				
+			</div>
+		</form>
+		<div style="text-align: center;margin: 0 auto;    margin-top: 20px;"><div class="or_div">OR</div>
+			<button type="submit" style="font-size: 18px;" class="max_width200 text-center button button-big button-block "><img class="img_width100" src="assets/custom/img/Loginwithg.png"></button>
+			<p class="text-center">Don't have an account ? <a href="signup_user.html"><strong>SIGN IN</strong></a></p>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,52 @@
+{
+  "_from": "cordova-plugin-ezar-snapshot@^1.0.0",
+  "_id": "cordova-plugin-ezar-snapshot@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-UKVBgtD1CwvuzGev15OTWUyLeq0y7uIdlEukmCXRXR4mHJcQHWwMEbLoPatgi5vz0LvyrTcHr+KxAEpbAv2Wtw==",
+  "_location": "/cordova-plugin-ezar-snapshot",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-ezar-snapshot@^1.0.0",
+    "name": "cordova-plugin-ezar-snapshot",
+    "escapedName": "cordova-plugin-ezar-snapshot",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-ezar-snapshot/-/cordova-plugin-ezar-snapshot-1.0.0.tgz",
+  "_shasum": "1fe30d02793d9f89085195a76025ef75128d1106",
+  "_spec": "cordova-plugin-ezar-snapshot@^1.0.0",
+  "_where": "D:\\wamp64\\www\\digitalbarapp",
+  "author": {
+    "name": "Wayne Parrott",
+    "email": "wayne@ezartech.com",
+    "url": "https://ezartech.com"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-ezar-snapshot",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Capture an image of application UI including Cordova webview",
+  "homepage": "https://ezartech.com",
+  "keywords": [
+    "snapshot",
+    "screenshot",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "modified MIT License, see http://ezartech.com/ezarstartupkit-license",
+  "name": "cordova-plugin-ezar-snapshot",
+  "version": "1.0.0"
+}

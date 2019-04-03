@@ -1,0 +1,51 @@
+{
+  "_from": "cordova-plugin-face-recognition",
+  "_id": "cordova-plugin-face-recognition@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-B/cbdyD56ukraIq/CDO/KtVzzOT2K19+urE5cOjN8p4aWJCyp+nFmgbuGSNsIAsmNFy8i9xsp5neeS/VlBhghA==",
+  "_location": "/cordova-plugin-face-recognition",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-face-recognition",
+    "name": "cordova-plugin-face-recognition",
+    "escapedName": "cordova-plugin-face-recognition",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-face-recognition/-/cordova-plugin-face-recognition-1.0.0.tgz",
+  "_shasum": "0b68ca222f5d9ba0f1697f959a47970de29012d0",
+  "_spec": "cordova-plugin-face-recognition",
+  "_where": "D:\\wamp64\\www\\digitalbarapp",
+  "author": {
+    "name": "huyuqiong"
+  },
+  "bugs": {
+    "url": "https://github.com/huyuqiong/cordova-plugin-face-recognition/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "a cordova plugin of face recognition",
+  "homepage": "https://github.com/huyuqiong/cordova-plugin-face-recognition#readme",
+  "keywords": [
+    "codova",
+    "face"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "cordova-plugin-face-recognition",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyuqiong/cordova-plugin-face-recognition.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}

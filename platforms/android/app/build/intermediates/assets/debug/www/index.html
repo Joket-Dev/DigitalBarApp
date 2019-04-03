@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8" /> <!-- Set character encoding -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" /> <!-- Internet Explorer compatibility mode -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" /> <!-- For responsiveness on mobile browsers -->
+		<!-- End: Basic Meta Tags -->
+		
+		<style>
+			@import 'ui/css/evothings-app.css';
+		</style>
+		
+		<!-- Begin: Content Security Policy Meta Tags 
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval' data: blob: filesystem: ws: gap: cdvfile: https://ssl.gstatic.com *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; child-src *;" /> 
+		--><!-- Allows control over where the resources are loaded from -->
+		<!-- End: Content Security Policy Meta Tags -->
+
+		<!-- Begin: Android Meta Tags -->
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="theme-color" content="#333333" /> <!-- Status bar color --> 
+
+		<link rel="icon" type="image/png" sizes="192x192" href="assets/custom/favicons/logo.png" />
+		<link rel="manifest" href="assets/custom/favicons/manifest.json" />
+		<!-- End: Android Meta Tags -->
+
+		<!-- Begin: iOS Meta Tags -->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="format-detection" content="telephone=no" /> <!-- Disable automatic detection and formatting of possible phone numbers -->
+		<meta name="apple-mobile-web-app-title" content="ChaistJoy" />
+		<!-- End: iOS Meta Tags -->
+
+		<!-- Begin: Windows Meta Tags -->
+		<meta name="application-name" content="ChaistJoy" />
+		<meta name="msapplication-tooltip" content="Mobile Web App Kit" />
+		<!-- End: Windows Meta Tags -->
+
+		<!-- Begin: Favicons -->		
+		<!-- End: Favicons -->
+
+		<!-- Begin: Stylesheets -->
+		<link rel="stylesheet" href="assets/vendor/framework7/css/framework7.material.min.css" />
+		<link rel="stylesheet" href="assets/vendor/framework7/css/framework7.material.colors.min.css" />
+		<link rel="stylesheet" href="assets/vendor/framework7-plugins/keypad/framework7.keypad.min.css" />
+		<link rel="stylesheet" href="assets/vendor/framework7-plugins/indexed-list/framework7.indexed-list.min.css" />
+		<link rel="stylesheet" href="assets/vendor/framework7-plugins/toast/toast.css" />
+		<link rel="stylesheet" href="assets/vendor/framework7-plugins/tour-guide/tour-guide.css" />
+		<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/vendor/hamburgers/hamburgers.min.css" />
+		<link rel="stylesheet" href="assets/vendor/material-icons/material-icons.css" />
+		<link rel="stylesheet" href="assets/vendor/pattern-lock/patternLock.css" />
+		<link rel="stylesheet" href="assets/vendor/rateyo/jquery.rateyo.min.css" />
+		<link rel="stylesheet" href="assets/vendor/tooltipster/css/tooltipster.bundle.min.css" />
+		<link rel="stylesheet" href="assets/vendor/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-borderless.min.css" />
+
+		<link rel="stylesheet" href="assets/vendor/nectar/nectar.css" />
+
+		<link rel="stylesheet" href="assets/custom/css/components.css" />
+		<link rel="stylesheet" href="assets/custom/css/pages.css" />
+		
+		<link href="assets/custom/font/fonts.css" rel="stylesheet" type="text/css" />
+	
+		<title>Digital Bar  </title>
+	</head>
+
+	<body class="theme-teal">
+		<div class="statusbar-overlay"></div>
+		<div id="controls" class="display_none">
+		    <div id="camera"></div>
+            <div id="revcamera"></div>
+            <div id="face0" class="face"></div>
+            <div id="face1" class="face"></div>
+            <div id="face2" class="face"></div>
+            <div id="face3" class="face"></div>
+            <div id="face4" class="face"></div>
+        </div>    
+		<div class="panel-overlay" style="transform: translate3d(0,0,0);-webkit-transform: translate3d(0,0,0);z-index: 99;"></div>
+		<div class="app" style="display:none;">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+			</div>
+			<br/>
+            <button user_name_p="" user_email_p="" user_mobile_p="" amount_p="" payment_token_p="" id="paymentWithoutUpi">Payment Without UPI</button>
+            <br/>
+            <br/>
+            <button user_name_p="" user_email_p="" user_mobile_p="" amount_p="" payment_token_p="" from_ =""  id="paymentWithUpi">Payment with UPI</button>
+            <button payment_type=""   id="paymentFinalStauts">paymentFinalStauts</button>
+            <button payer_id=""  style="display:none;" id = "player_id">player_id</button>
+            <button style="display:none;" id = "googleLogin">Google Login</button>
+            <button style="display:none;" id = "facebookLogin">Facebook Login</button>
+            <button style="display:none;" id = "paymentDone">Payment done</button>
+        </div>
+		
+		<ul id="beacon" class="dynamic display_none"></ul>
+		<div id="beacon_new_user" class="display_none">ok</div>
+
+		<ul id="events" class="dynamic display_none"></ul>
+		<!-- Begin: Left Side Panel -->
+		<div class="panel panel-left panel-reveal" style="width:100%;background:#000;height:100%;top:50px;z-index: 999;">
+			
+			<div class="list-block no-hairlines no-hairlines-between mymenu" style="opacity:0.7;margin: 10px 0;">
+				<ul>
+					
+					<li >
+						
+						<a href="user-profile.html" class="item-link close-panel">
+							<div class="item-content">
+								<div class="item-media">
+									<img src="assets/custom/img/cards.png" width="24" alt="Settings" />
+								</div>
+								<div class="item-inner">
+									<div class="item-title">Profile</div>
+								</div>
+							</div>
+						</a>
+					</li>
+							
+							
+					<li >		
+						<a href="change_password.html" class="item-link  close-panel">
+							<div class="item-content">
+								<div class="item-media">
+									<img src="assets/custom/img/splash-screen.png" width="24" alt="Settings" />
+								</div>
+								<div class="item-inner">
+									<div class="item-title">Change Password</div>
+								</div>
+							</div>
+						</a>
+					</li>
+							
+							
+					<li class="user_panel">		
+							<a href="food_menu.html" class="item-link user_panel close-panel">
+								<div class="item-content">
+									<div class="item-media">
+										<img src="assets/custom/img/products-list.png" width="24" alt="Settings" />
+									</div>
+									<div class="item-inner">
+										<div class="item-title"> Menu</div>
+									</div>
+								</div>
+							</a>
+					</li>
+					<li class="user_panel">		
+							<a href="cart.html" class="item-link user_panel close-panel">
+								<div class="item-content">
+									<div class="item-media">
+										<img src="assets/custom/img/cart.png" width="24" alt="Settings" />
+									</div>
+									<div class="item-inner">
+										<div class="item-title"> Cart</div>
+									</div>
+								</div>
+							</a>
+					</li>	
+				</ul>
+			</div>		
+			<div class="list-block no-hairlines no-hairlines-between" style="opacity:0.7;margin: 10px 0;">
+				<ul>			
+					<li>	
+						<a href="#" class="item-link" data-action="Log-Out">
+								<div class="item-content">
+									<div class="item-media">
+										<img src="assets/custom/img/swipeout.png" width="24" alt="Settings" />
+									</div>
+									<div class="item-inner">
+										<div class="item-title">Sign Out</div>
+									</div>
+								</div>
+							</a>
+					</li>	
+							
+					<li>	
+						&nbsp;
+					</li>	
+					<li>	
+						&nbsp;
+					</li>	
+				
+				</ul>
+			</div>
+		</div>
+
+<script>
+
+</script>
+		<!-- End: Left Side Panel -->
+		<div class="panel panel-right panel-reveal" style="width:86%;">
+
+		<div class="profile-header_image">
+			<img class="user-avatar img-circle user_photo" src="assets/custom/img/user-profile.png" />
+			<div class="user-name full_name">------</div>
+		</div>
+
+		<div class=" settings_link text-center">
+					<a href="user-profile.html" class="item-link close-panel">
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title">Profile</div>
+							</div>
+						</div>
+					</a>
+					
+					<a href="#" class="item-link close-panel" data-action="Log-Out">
+						<div class="item-content">
+							<div class="item-inner">
+								<div class="item-title">Sign Out</div>
+							</div>
+						</div>
+					</a>
+		</div>
+		</div>
+		<!-- End: Right Side Panel -->
+
+		<div class="views" style="z-index:9;transform: translate3d(0,0,0);-webkit-transform: translate3d(0,0,0);">
+			<div class="view view-main">
+				<div class="pages navbar-fixed">
+					<div data-page="splash-screen" class="page no-navbar">
+						<!-- Begin: Page Content -->
+						<div class="page-content">
+							<div class="splash">
+								<div class="splash-media">
+									<svg id="logo" style="display:none;" class="logo" xmlns="http://www.w3.org/2000/svg" width="1632" height="320" viewBox="0 0 1632 320">
+										<path stroke="#673AB7" fill="#673AB7" d="M1.47 313.245V6.755h15.923l173.02 277.426V6.757h15.92v306.49h-15.92L17.393 35.29v277.955H1.47z" />
+										<path stroke="#2196F3" fill="#2196F3" d="M513.188 282.067q-29.19 36.462-95.532 36.462-66.34 0-95-37.52-28.66-37.52-28.66-121.01t28.66-121.01q28.66-37.52 95-37.52 76.957 0 104.555 50.2L392.18 160h-24.943L501.512 48.5q-23.352-31.176-83.856-31.176-26.536 0-44.58 5.813-18.046 5.284-33.437 20.608-14.863 14.796-22.293 43.86-7.43 28.535-7.43 72.395t7.43 72.923q7.43 28.536 22.29 43.86 15.392 14.796 33.437 20.61 18.045 5.283 44.58 5.283 60.505 0 83.857-31.177l11.677 10.566z" />
+										<path stroke="#4CAF50" fill="#4CAF50" d="M613.936 281.01q-28.66-37.518-28.66-121.01t28.66-121.01q28.66-37.52 95-37.52 66.343 0 95.533 36.463L792.79 48.5q-23.352-31.176-83.856-31.176-26.536 0-44.58 5.813-18.046 5.284-33.437 20.608-14.86 14.796-22.29 43.86Q601.2 116.14 601.2 160t7.43 72.923q7.43 28.536 22.29 43.86 15.39 14.796 33.436 20.61 18.045 5.283 44.58 5.283 60.505 0 83.857-31.177l11.676 10.566q-29.19 36.462-95.534 36.462-66.34 0-95-37.52z" />
+										<path stroke="#FFEB3B" fill="#FFEB3B" d="M1082.63 6.755v15.853H971.178v290.637h-15.922V22.608H843.8V6.755h238.83z" />
+										<path stroke="#FF9800" fill="#FF9800" d="M1171.918 297.392h173.02l-108.8-255.232-115.7 271.085h-16.984L1236.137 1.47l132.683 311.775h-196.902v-15.853z" />
+										<path stroke="#F44336" fill="#F44336" d="M1558.35 159.472l72.18 153.773h-17.515l-74.303-158.53q1.062-.528 9.023-4.227l11.676-5.812q3.186-2.114 10.616-6.87t11.146-8.983q3.716-4.756 7.962-10.57 4.776-6.34 6.9-13.738 2.122-7.927 2.122-16.91 0-33.29-31.844-49.144-31.844-15.85-79.08-15.85h-42.457v290.636h-15.922V6.756h58.38q62.628 0 94.472 21.665 32.374 21.668 32.374 59.186 0 24.308-16.453 43.33-16.453 18.496-39.275 28.537z" />
+									</svg>
+									<img src="assets/custom/img/logo.png" style="display:none;width: 80%; text-align: center;">
+								</div>
+								<div class="splash-preloader">
+									<span class="preloader preloader-yellow"></span>
+								</div>
+							</div>
+						</div>
+						<!-- End: Page Content -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="assets/constant.js"></script>
+		<!-- Begin: Scripts -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/SocialSharing.js"></script>
+		
+		<script type="text/javascript" src="assets/vendor/jquery/jquery-2.2.4.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/framework7/js/framework7.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/framework7-plugins/keypad/framework7.keypad.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/framework7-plugins/indexed-list/framework7.indexed-list.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/framework7-plugins/toast/toast.js"></script>
+		<script type="text/javascript" src="assets/vendor/framework7-plugins/tour-guide/tour-guide.js"></script>
+		<script type="text/javascript" src="assets/vendor/gmaps/gmaps.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/jquery-validation/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/jquery-validation/additional-methods.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/pattern-lock/patternLock.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/rateyo/jquery.rateyo.min.js"></script>		
+		<script type="text/javascript" src="assets/vendor/snazzy-maps/snazzy-maps.js"></script>
+		<script type="text/javascript" src="assets/vendor/tooltipster/js/tooltipster.bundle.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/vivus/vivus.min.js"></script>
+		<script type="text/javascript" src="assets/vendor/geocomplete/jquery.geocomplete.min.js"></script>
+
+		<script type="text/javascript" src="assets/custom/js/init.js"></script>
+		<script type="text/javascript" src="assets/dmuploader.min.js"></script>
+		<script type="text/javascript" src="assets/demo.min.js"></script>
+		<link rel="stylesheet" href="assets/demo.css" />
+		<link rel="stylesheet" href="assets/uploader.css" />
+		<script type="text/javascript" src="assets/vendor/nectar/nectar.js"></script>
+
+		
+		<link href="assets/custom/multiselect/jquery.ultraselect.min.css" rel="stylesheet" />
+		<script src="assets/custom/multiselect/jquery.ultraselect.min.js"></script>
+
+		
+		<script type="text/javascript" src="assets/custom/js/components.js"></script>
+		<script type="text/javascript" src="assets/custom/js/pages.js"></script>
+	
+		<script type="text/javascript" src="assets/custom/js/settings.js"></script>
+		
+		<script type="text/javascript" src="assets/custom/js/profile.js"></script>
+		<script type="text/javascript" src="assets/custom/js/themes.js"></script>
+		
+		<!--<script type="text/javascript" src="assets/constant1.js"></script>-->
+		<script>
+			if (window.hyper && window.hyper.log) { console.log = hyper.log }
+		</script>
+
+		<script src="libs/evothings/evothings.js"></script>
+		<script src="app.js"></script>
+	
+	
+		<script type="text/javascript">
+			'use strict';
+
+			(function() {
+				myApp.init();
+			})();
+		</script>
+		<!-- End: Scripts -->
+		<style>
+			.button{text-transform: initial;}
+			.menu_heading{
+				height: 20px;
+				margin: 0px;
+				line-height: 17px;
+				margin-top: -11px;
+			}
+		</style>
+	</body>
+</html>
+

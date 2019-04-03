@@ -1,0 +1,45 @@
+<div data-page="OTPpage" class="page">
+	<!-- Begin: Navbar -->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="link icon-only back">
+					<i class="fa fa-angle-left" aria-hidden="true" style="font-size: -webkit-xxx-large;"></i>
+				</a>
+			</div>
+			<div class="center">OTP verify </div>
+		</div>
+	</div>
+	<!-- End: Navbar -->
+
+	<!-- Begin: Page Content -->
+  <div class="page-content"style="padding-left: 8%;padding-left:8%;">
+		<div class="content-block text-center">
+			<p style="margin:50px 0 50px 0;color:#2196f3;">Please enter OTP .</p>
+		</div>
+
+		<form name="otp" action="#" method="POST" enctype="multipart/form-data">
+			<div class="list-block no-hairlines">
+				<ul>
+					<li>
+						<div class="item-content"style="border-bottom: 1px solid #eee;"><i class="material-icons">perm_phone_msg</i>
+							<div class="item-inner"style="margin-left: 5px;">
+								<div class="item-input">
+									<input type="number" id="otp_verify" name="otp_verify" placeholder="OTP" required />
+								</div>
+								<div class="item-text input-error"></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="content-block"style="margin-top:30px;">
+				<button type="submit" class="button  button-block button-fill">verify</button>
+				<p class="text-center ">Didn't receive OTP ? <a href="#" class="resendotp">Resend</a></p>
+			</div>
+		</form>
+	</div>
+	<!-- End: Page Content -->
+
+
+</div>

@@ -1,0 +1,54 @@
+{
+  "_from": "cordova-plugin-ezar-facedetector@^1.0.0",
+  "_id": "cordova-plugin-ezar-facedetector@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-idnUP5Ey/q6tKJWbAXGYWzLPbJhtDP7gPXaNL1Jy5KT6Vi43HVdvtz0cxI/WtC1gSdybL8t0oMMdzQGU8lIz9A==",
+  "_location": "/cordova-plugin-ezar-facedetector",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-ezar-facedetector@^1.0.0",
+    "name": "cordova-plugin-ezar-facedetector",
+    "escapedName": "cordova-plugin-ezar-facedetector",
+    "rawSpec": "^1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-ezar-facedetector/-/cordova-plugin-ezar-facedetector-1.0.0.tgz",
+  "_shasum": "c66bdfddf8851f3dd59e7559d7751eef573ba68a",
+  "_spec": "cordova-plugin-ezar-facedetector@^1.0.0",
+  "_where": "D:\\wamp64\\www\\digitalbarapp",
+  "author": {
+    "name": "Wayne Parrott",
+    "email": "wayne@ezartech.com",
+    "url": "http://ezartech.com"
+  },
+  "bugs": {
+    "url": "https://support.ezartech.com"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-ezar-facedetector",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Detect human faces in video preview stream from the videooverlay plugin",
+  "homepage": "https://ezartech.com",
+  "keywords": [
+    "face detection",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "license": "modified MIT License, see http://ezartech.com/ezarstartupkit-license",
+  "name": "cordova-plugin-ezar-facedetector",
+  "version": "1.0.0"
+}
